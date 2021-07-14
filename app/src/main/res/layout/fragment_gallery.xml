@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.gallery.GalleryFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ProgressBar
+            android:id="@+id/galleryProgressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="163dp"
+            android:layout_marginLeft="163dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginEnd="200dp"
+            android:layout_marginRight="200dp" />
+     <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_alignParentTop="true"
+         android:layout_alignParentEnd="true"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentStart="true"
+         android:layout_alignParentBottom="true"
+         android:layout_marginTop="0dp"
+         android:layout_marginEnd="0dp"
+         android:layout_marginRight="0dp"
+         android:layout_marginLeft="0dp"
+         >
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="15dp"
+             android:layout_marginLeft="15dp"
+             android:layout_marginEnd="15dp"
+             android:layout_marginRight="15dp"
+             android:orientation="vertical">
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:layout_marginBottom="20dp"
+                 android:orientation="vertical">
+
+                 <TextView
+                     android:id="@+id/convocationTextView"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:background="#8652E1"
+                     android:fontFamily="@font/adamina"
+                     android:gravity="center_horizontal"
+                     android:paddingTop="20dp"
+                     android:paddingBottom="20dp"
+                     android:text="Convocation"
+                     android:textColor="@color/white"
+                     android:textSize="20sp" />
+
+                 <androidx.recyclerview.widget.RecyclerView
+                     android:id="@+id/convocationRecyclerView"
+                     android:layout_width="match_parent"
+                     android:layout_height="300dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/lightgray"
+                    />
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:layout_marginBottom="20dp"
+                 android:orientation="vertical">
+
+                 <TextView
+                     android:id="@+id/independenceTextView"
+                     android:layout_width="match_parent"
+
+                     android:layout_height="wrap_content"
+                     android:background="#8652E1"
+                     android:fontFamily="@font/adamina"
+                     android:gravity="center_horizontal"
+                     android:paddingTop="20dp"
+                     android:paddingBottom="20dp"
+                     android:text="Independence Day"
+                     android:textColor="@color/white"
+                     android:textSize="20sp" />
+
+                 <androidx.recyclerview.widget.RecyclerView
+                     android:id="@+id/independenceRecyclerView"
+                     android:layout_width="match_parent"
+                     android:layout_height="300dp" />
+                 <View
+                     android:layout_width="match_parent"
+                     android:layout_height="1.5dp"
+                     android:layout_marginTop="30dp"
+                     android:background="@color/lightgray"
+                     />
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:layout_marginBottom="20dp"
+                 android:orientation="vertical">
+
+                 <TextView
+                     android:id="@+id/annualTextView"
+                     android:layout_width="match_parent"
+
+                     android:layout_height="wrap_content"
+                     android:background="#8652E1"
+                     android:fontFamily="@font/adamina"
+                     android:gravity="center_horizontal"
+                     android:paddingTop="20dp"
+                     android:paddingBottom="20dp"
+                     android:text="Annual Function"
+                     android:textColor="@color/white"
+                     android:textSize="20sp" />
+
+                 <androidx.recyclerview.widget.RecyclerView
+                     android:id="@+id/annualRecyclerView"
+                     android:layout_width="match_parent"
+                     android:layout_height="300dp" />
+                 <View
+                     android:layout_width="match_parent"
+                     android:layout_height="1.5dp"
+                     android:layout_marginTop="30dp"
+                     android:background="@color/lightgray"
+                     />
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:layout_marginBottom="20dp"
+                 android:orientation="vertical">
+
+                 <TextView
+                     android:id="@+id/otherTextView"
+                     android:layout_width="match_parent"
+
+                     android:layout_height="wrap_content"
+                     android:background="#8652E1"
+                     android:fontFamily="@font/adamina"
+                     android:gravity="center_horizontal"
+                     android:paddingTop="20dp"
+                     android:paddingBottom="20dp"
+                     android:text="Other Event"
+                     android:textColor="@color/white"
+                     android:textSize="20sp" />
+
+                 <androidx.recyclerview.widget.RecyclerView
+                     android:id="@+id/otherRecyclerView"
+                     android:layout_width="match_parent"
+                     android:layout_height="300dp" />
+                 <View
+                     android:layout_width="match_parent"
+                     android:layout_height="1.5dp"
+                     android:layout_marginTop="30dp"
+                     android:background="@color/lightgray"
+                     />
+             </LinearLayout>
+
+         </LinearLayout>
+
+     </ScrollView>
+    </RelativeLayout>
+
+</FrameLayout>

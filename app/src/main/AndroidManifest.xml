@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.admincollageapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AdminCollageApp">
+        <activity android:name=".ForgotPassword.ForgotPasswordActivity"></activity>
+        <activity android:name=".Login.UserLoginActivity" />
+        <activity android:name=".registration.UserRegisterActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".FullImageActivity" />
+        <activity android:name=".ebook.PdfViewerActivity" />
+        <activity
+            android:name=".ebook.EbookActivity"
+            android:parentActivityName=".MainActivity2" />
+        <activity android:name=".Login.EntryActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="preloaded_fonts"
+                android:resource="@array/preloaded_fonts" />
+        </activity>
+        <activity android:name=".MainActivity2" />
+        <activity android:name=".DeleteNoticeActivity" />
+        <activity android:name=".Faculty.UpdateTeacher" />
+        <activity android:name=".Faculty.AddTeacher" />
+        <activity android:name=".Faculty.UpdateFaculty" />
+        <activity android:name=".Upload_Pdf_Activity" />
+        <activity android:name=".Upload_Image_Activity" />
+        <activity android:name=".Upload_Notice_Activity" />
+        <activity android:name=".MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
